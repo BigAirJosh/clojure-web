@@ -15,7 +15,7 @@
                 :db "clojuredb"
                 :make-pool? true
                 :user "root"
-                :password "0cean11"
+                :password "developer"
                 :naming {
                          :keys str/lower-case
                          ;; set map keys to lower
