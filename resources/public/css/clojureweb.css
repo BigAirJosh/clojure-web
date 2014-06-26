@@ -1,3 +1,17 @@
-.cw-img-header {
-    
+body { padding-top: 70px; }
+
+.cw-content {
+    margin: 10px;
+}
+
+.cw-nav-link {
+    padding: 0px !important; 
+    margin-top: 10px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.cw-nav-link img{
+    width: 35px;
+    height: 35px;
 }

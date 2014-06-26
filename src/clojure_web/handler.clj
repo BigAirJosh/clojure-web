@@ -25,9 +25,12 @@
 
 (defroutes app-routes
   (route/resources "/")
+  (context "/home" []
+    (defroutes user-routes
+      (GET "/" [] (layout (home-view) :home))))
   (context "/users" []
     (defroutes user-routes
-      (GET "/" [] (layout (home-view)))))
+      (GET "/" [] (layout (users-view) :users (users-nav)))))
   (context "/api" [] 
     (context "/user" []
       (defroutes users-routes
