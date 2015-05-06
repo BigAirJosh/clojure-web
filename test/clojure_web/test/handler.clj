@@ -5,9 +5,9 @@
 
 (deftest test-app
   (testing "main route"
-    (let [response (app (request :get "/"))]
+    (let [response (app (request :get "/home"))]
       (is (= (:status response) 200))
-      (is (= (:body response) "Hello World"))))
+      (is (contains? (:body response) "Clojure Web"))))
   
   (testing "not-found route"
     (let [response (app (request :get "/invalid"))]
