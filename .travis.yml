@@ -6,4 +6,3 @@ before_script:
 	- sleep 60
 script: lein test
 after_script: pkill -f ring
-
