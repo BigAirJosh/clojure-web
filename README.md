@@ -1,6 +1,8 @@
 clojure-web
 ===========
 
+[![Build Status](https://travis-ci.org/BigAirJosh/clojure-web.svg?branch=master)](https://travis-ci.org/BigAirJosh/clojure-web)
+
 A simple restful web app based on a clojure backend and angular/bootstrap client.
 
 ## Prerequisites

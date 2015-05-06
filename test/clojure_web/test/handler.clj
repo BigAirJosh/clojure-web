@@ -7,7 +7,7 @@
   (testing "main route"
     (let [response (app (request :get "/home"))]
       (is (= (:status response) 200))
-      (is (contains? (:body response) "Clojure Web"))))
+      (is (.contains (:body response) "Clojure Web"))))
   
   (testing "not-found route"
     (let [response (app (request :get "/invalid"))]
